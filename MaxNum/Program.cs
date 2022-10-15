@@ -11,12 +11,12 @@ Console.Write("Введите второе число ");
 int b = int.Parse(Console.ReadLine()!);
 if (a > b)
 {
-    Console.Write("В этой паре максимальное число - ");
+    Console.Write("В этой паре максимальное число  ");
     Console.Write(a);
 }
 if (b > a)
 {
-    Console.Write("В этой паре максимальное число - ");
+    Console.Write("В этой паре максимальное число  ");
     Console.Write(b);
 } 
 if (a == b)
