@@ -12,8 +12,8 @@
 // все случаи, как минимум до 1000 человек.
 
 
-int programmer = new Random().Next(1, 1000);
-//int programmer = int.Parse(Console.ReadLine()!);
+//int programmer = new Random().Next(1, 1000);
+int programmer = int.Parse(Console.ReadLine()!);
 if(programmer %10 == 0 || programmer %10 == 5 || programmer %10 == 6 ||
    programmer %10 == 7 || programmer %10 == 8 || programmer %10 == 9 )
 {
