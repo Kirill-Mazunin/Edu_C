@@ -8,7 +8,14 @@
 
 Console.Write("Введите трехзначное число ");
 int n = int.Parse(Console.ReadLine()!);
-Console.Write("Вторая цифра этого числа " + ((n % 100) / 10));
+if (n/100 >= 1 && n/100 < 10)
+{
+    Console.Write("Вторая цифра этого числа " + ((n % 100) / 10));
+} 
+else
+{
+    Console.Write("Ваше число не трехзначное");
+}
 
 
 // int result = (n % 100) / 10;
