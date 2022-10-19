@@ -10,9 +10,9 @@ int n = int.Parse(Console.ReadLine()!);
 int b = n;
 int count = 0;
 int length = 0;
-while(n > 0)
+while (n > 0)
 {
-    n = n/10;
+    n = n / 10;
     length++;
 }
 int c = length;
@@ -23,14 +23,14 @@ if (c < 3)
 }
 else
 {
-    while(count < c - 3)
+    while (count < c - 3)
     {
-        b = b/10;
+        b = b / 10;
         count++;
     }
-   
-    
-Console.WriteLine(b%10);
+
+
+    Console.WriteLine(b % 10);
 }
 
 
