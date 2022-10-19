@@ -7,7 +7,8 @@
 
 Console.Write("Введите число ");
 int n = int.Parse(Console.ReadLine()!);
-int b = n;
+int temp = n;
+int index = 3;
 int count = 0;
 int length = 0;
 while (n > 0)
@@ -15,22 +16,18 @@ while (n > 0)
     n = n / 10;
     length++;
 }
-int c = length;
-if (c < 3)
+if (length < index)
 {
     Console.WriteLine("Третьей цифры нет");
-    //break;
 }
 else
 {
-    while (count < c - 3)
+    while (count < length - index)
     {
-        b = b / 10;
+        temp = temp / 10;
         count++;
     }
-
-
-    Console.WriteLine(b % 10);
+    Console.WriteLine("Третья цифра числа " + (temp % 10));
 }
 
 
