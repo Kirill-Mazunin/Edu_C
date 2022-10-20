@@ -27,6 +27,3 @@ else
 {
     Console.Write("В комнате сейчас " + programmer + " программистов");
 } 
-
-// (programmer %10 == 0 || programmer %10 == 5 || programmer %10 == 6 ||
- // programmer %10 == 7 || programmer %10 == 8 || programmer %10 == 9 )
