@@ -14,16 +14,19 @@
 
 //int programmer = new Random().Next(1, 1000);
 int programmer = int.Parse(Console.ReadLine()!);
-if(programmer %10 == 0 || programmer %10 == 5 || programmer %10 == 6 ||
-   programmer %10 == 7 || programmer %10 == 8 || programmer %10 == 9 )
-{
-    Console.Write("В комнате сейчас " + programmer + " программистов");
-} 
-if(programmer %10 == 2 || programmer %10 == 3 || programmer %10 == 4)
-{
-    Console.Write("В комнате сейчас " + programmer + " программиста");
-}
-if(programmer %10 == 1)
+if(programmer %10 == 1 && programmer %100 != 11)
 {
     Console.Write("В комнате сейчас " + programmer + " программист");
 } 
+else if(programmer %10 == 2 && programmer %100 != 12 || programmer %10 == 3 && programmer %100 != 13 
+        || programmer %10 == 4 && programmer %100 != 14)
+{
+    Console.Write("В комнате сейчас " + programmer + " программиста");
+}
+else 
+{
+    Console.Write("В комнате сейчас " + programmer + " программистов");
+} 
+
+// (programmer %10 == 0 || programmer %10 == 5 || programmer %10 == 6 ||
+ // programmer %10 == 7 || programmer %10 == 8 || programmer %10 == 9 )
