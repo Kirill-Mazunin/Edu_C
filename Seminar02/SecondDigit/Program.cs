@@ -5,7 +5,6 @@
 // 782 -> 8
 // 918 -> 1
 
-
 Console.Write("Введите трехзначное число ");
 int n = int.Parse(Console.ReadLine()!);
 if (n/100 >= 1 && n/100 < 10)
