@@ -8,26 +8,15 @@
 int LengthNumber(int num)
 {
     int length = 0;
-    while (num > 0)
-    {
-        num = num / 10;
-        length++;
-    }
+    while (num > 0) { num = num / 10; length++; }
     return length;
 }
-
 int DigitInNum(int num, int index, int length)
 {
     int count = 0;
-
-    while (count < length - index)
-    {
-        num = num / 10;
-        count++;
-    }
+    while (count < length - index) { num = num / 10; count++; }
     return (num % 10);
 }
-
 M:
 Console.WriteLine("Введите пятизначное число");
 int a = int.Parse(Console.ReadLine()!);
