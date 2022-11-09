@@ -3,8 +3,9 @@
 void AddPrintArray()
 {
     int[] array = new int[8];
-    for (int i = 0; i < array.Length; ++i)
+    for (int i = 0; i < array.Length; i++)
     {
+        Console.Write("Введите число: ");
         array[i] = int.Parse(Console.ReadLine()!);
     }
     for (int i = 0; i < array.Length; i++)
