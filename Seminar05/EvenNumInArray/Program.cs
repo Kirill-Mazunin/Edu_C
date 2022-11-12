@@ -31,3 +31,21 @@ int [] array = new int[4];
 FillArray(array);
 PrintArray(array);
 GetEvenInArray(array);
+
+// либо все в кучу
+
+void EvenNumInArray()
+{
+int [] array = new int[4];
+var random = new Random();
+int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = random.Next(100, 1000);
+        Console.Write($"{array[i]} ");
+        if (array[i] % 2 == 0) {count++;} 
+    }
+    Console.WriteLine();
+    Console.WriteLine(count);
+}
+EvenNumInArray();
