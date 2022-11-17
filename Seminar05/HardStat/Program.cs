@@ -89,7 +89,21 @@ if (n % 2 != 0) { median = array[(n + 1) / 2 - 1];}
 else { median = (array[n / 2 - 1] + array[n / 2]) / 2.0d; }
 return median;
 }
+void SelectionSort(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        int minPosition = i;
 
+        for (int j = i + 1; j < array.Length ; j++)
+        {
+            if (array[j] < array[minPosition]) minPosition = j;
+        }
+        int temp = array[i];
+        array[i] = array[minPosition];
+        array[minPosition] = temp;
+    }
+}
 
 
 int[] array = new int[5];
@@ -109,5 +123,6 @@ array2[3] = MaxElementIndex(array, max) + " это индекс максимал
 array2[4] = AverageElementArray(array) + " это среднее арифметическое элементов массива";
 
 PrintArrayObject(array2);
-
+SelectionSort(array);
+Console.WriteLine(array);
 Console.WriteLine(MedianElementInArray(array)+ " это медианное значение массива");
