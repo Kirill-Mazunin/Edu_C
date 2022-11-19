@@ -14,7 +14,6 @@ void FillArray(int[,] matr)
         }
     }
 }
-
 void PrintArray(int[,] matr)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
@@ -26,7 +25,6 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
-
 void MinElementInArray(int[,] matr)
 {
     int min = matr[0, 0];
@@ -92,6 +90,7 @@ void AvrElementInArray(int[,] matr)
     double result = Math.Round((double)sum / (matr.GetLength(0) * matr.GetLength(1)),2) ;
     Console.WriteLine($"Среднее арифметическое элементов массива: {result}");
 }
+
 int[,] matrix = new int[3, 4];
 
 FillArray(matrix);
